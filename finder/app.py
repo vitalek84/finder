@@ -10,7 +10,7 @@ from .resources import TestDataGeneration
 
 logging.basicConfig(stream=sys.stdout, level=logging.WARNING)
 #Enter you database connect here
-CON_STR ='postgresql://login:password@localhost/database'
+CON_STR ='postgresql://login:password@localhost/DB'
 
 def create_app():
     db_handler = DB(CON_STR)
