@@ -9,7 +9,8 @@ from .resources import MaskOnHead
 from .resources import TestDataGeneration
 
 logging.basicConfig(stream=sys.stdout, level=logging.WARNING)
-CON_STR ='postgresql://loyalty:loyalty@localhost/loyalty'
+#Enter you database connect here
+CON_STR ='postgresql://login:password@localhost/database'
 
 def create_app():
     db_handler = DB(CON_STR)
